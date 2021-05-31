@@ -21,7 +21,7 @@
             <div class="hnazmul-nav-brand">
 
                 <!-- here is navbar brand section  -->
-                <h4>AURA</h4>
+                <h4 >AURA</h4>
             </div>
 
             <div class="hnazmul-nav-toggle-btn">
@@ -32,20 +32,20 @@
             <div class="hnazmul-navbar-content">
                 <div class="hnazmul-navbar-content-wrapper">
                     <ul class="navbar-list">
-                        <li class="navbar-list-item">
+                        <li class="navbar-list-item itemhider">
 
                             <!-- those all items for navbar -->
 
-                            <a href="index.html" class="navbar-list-link">Home</a>
+                            <a href="index.html" class="navbar-list-link ">Home</a>
                             <!-- in href its mean where the user will redirected when clicked  -->
                         </li>
-                        <li class="navbar-list-item">
-                            <a href="pages/product-service.html" class="navbar-list-link">Products and services</a>
+                        <li class="navbar-list-item itemhider">
+                            <a href="pages/product-service.html" class="navbar-list-link ">Products and services</a>
                         </li>
-                        <li class="navbar-list-item">
-                            <a href="pages/gallary.html" class="navbar-list-link">Gallery</a>
+                        <li class="navbar-list-item itemhider">
+                            <a href="pages/gallary.html" class="navbar-list-link ">Gallery</a>
                         </li>
-                        <li class="navbar-list-item">
+                        <li class="navbar-list-item itemhider">
                             <a href="pages/contact.html" class="navbar-list-link">Contact</a>
                         </li>
                         <li class="navbar-list-item">
@@ -106,7 +106,7 @@
     <script>
         $(document).ready(function () {
             $("#hideUnhideButton").click(function () {
-                alert()
+              $(".itemhider").toggleClass("d-none")
             });
         });
     </script>
