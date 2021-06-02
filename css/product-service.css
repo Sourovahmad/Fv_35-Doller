@@ -34,10 +34,19 @@
     display: flex;
     justify-content: space-between;
 }
-
+.should-be-hidden{
+    opacity: 0;
+    transition: 1s;
+    
+}
+.will-be-hidden{
+    opacity: 1;
+    visibility:visible;
+}
 @media screen and (max-width:768px){
     .products .product{
       width: 100%;
       margin-bottom: 25px;
     }
   }
+  

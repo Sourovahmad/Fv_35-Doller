@@ -16,40 +16,46 @@
     <nav class="hnazmul-navbar">
         <div class="hnazmul-navbar-container">
             <div class="hnazmul-nav-brand">
-     <!-- here is navbar brand section  -->
-                <h4>AURA</h4>
+
+                <!-- here is navbar brand section  -->
+                <h4 >AURA</h4>
             </div>
+
             <div class="hnazmul-nav-toggle-btn">
-
-               <!-- this button is when you in mobile view a toggle button will be showen -->\
-
+                <!-- this button is when you in mobile view a toggle button will be showen -->
                 <button><img class="toggler-btn" src="../images/toggler-icon.svg" alt="" /></button>
             </div>
 
             <div class="hnazmul-navbar-content">
                 <div class="hnazmul-navbar-content-wrapper">
-                    <ul class="navbar-list">
+                    <ul class="navbar-list itemhider">
+                        
+                            <li class="navbar-list-item">
 
-                            <!-- those all items for navbar -->
-
-                        <li class="navbar-list-item">
-                            <a href="../index.html" class="navbar-list-link">Home</a>
-
+                                <!-- those all items for navbar -->
+    
+                                <a href="../index.html" class="navbar-list-link ">Home</a>
                                 <!-- in href its mean where the user will redirected when clicked  -->
-                        </li>
-                        <li class="navbar-list-item">
-                            <a href="product-service.html" class="navbar-list-link">Products and services</a>
-                        </li>
-                        <li class="navbar-list-item">
-                            <a href="gallary.html" class="navbar-list-link">Gallery</a>
-                        </li>
-                        <li class="navbar-list-item">
-                            <a href="#" class="navbar-list-link">Contact</a>
-                        </li>
-                        <li class="navbar-list-item">
-                            <a href="#" class="navbar-list-link"><button>Hide/Unhide</button></a>
-                        </li>
+                            </li>
+                            <li class="navbar-list-item ">
+                                <a href="product-service.html" class="navbar-list-link ">Products and services</a>
+                            </li>
+                            <li class="navbar-list-item ">
+                                <a href="gallary.html" class="navbar-list-link ">Gallery</a>
+                            </li>
+                            <li class="navbar-list-item ">
+                                <a href="contact.html" class="navbar-list-link">Contact</a>
+                            </li>
+                        
+                        
                     </ul>
+
+                        <div class="hider-btn">
+                            <button id="hideUnhideButton">Hide/Unhide</button>
+                        </div>
+                        
+                    
+
                     <button class="navbar-closer-icon">
                         <img class="navbar-closer" src="../images/times-navbar-clouser-icon.svg" alt="" />
                     </button>
@@ -68,7 +74,7 @@
 
         <!-- form has started from here  -->
 
-            <form action="#">
+            <form action="mailto:someone@example.com">
                     <div class="total-field">
                         <div class="label">
 
@@ -76,8 +82,9 @@
 
                             <label for="full-name">Full Name</label>
                         </div>
-                        <div class="input">
-                            <input type="text" id="full-name">
+                        <div class="input contact___from__Name__Input">
+                            <p class="d-none unvalid-text text-danger">Please enter letter only</p>
+                            <input class="nameFiled" type="text" id="full-name" required>
                         </div>
                     </div>
 
@@ -86,7 +93,7 @@
                             <label for="mobile-number">Mobile Number</label>
                         </div>
                         <div class="input">
-                            <input type="number" id="mobile-number">
+                            <input type="number" id="mobile-number" required>
                         </div>
                     </div>
 
@@ -99,7 +106,7 @@
 
                             <!-- input type email means you cannt type without @  -->
 
-                            <input type="email" id="email">
+                            <input type="email" id="email" required>
                         </div>
                     </div>
 
@@ -110,7 +117,7 @@
                         <div class="input">
 
                             <!-- textarea means the text writing section where you can write free texts -->
-                            <textarea name="" id="comment" cols="30" rows="10"></textarea>
+                            <textarea name="" id="comment" cols="30" rows="10" required></textarea>
                         </div>
                     </div>
 
@@ -130,9 +137,7 @@
     <footer class="syed-footer">
         <h5>&copy; Yatlung 2021.</h5>
     </footer>
-
-
-    <script src="../js/index.js"></script>
+    <script src="../js/contact.js"></script>
 
 </body>
 </html>
